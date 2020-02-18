@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <h1>FEEDBACK</h1>
+        <form (ngSubmit)="onsubmit()">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input #name type="text" name="username" [(ngModel)]="newUser.username"  class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">comments</label>
+                <textarea class="form-control" rows="3" [(ngModel)]="newUser.comments" name="comments" > </textarea>
+            </div>
+            <button type="submit" class="btn btn-success">submit</button>
+        </form>
+    </div>
+</div>
